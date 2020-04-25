@@ -1,0 +1,131 @@
+
+p{
+  font-size:1.2em;
+}
+section{
+  height:9vh;
+}
+
+.btn-danger{
+  background-color: rgba(185,36,59,0.6);
+}
+.btn-info{
+background-color: rgba(38,184,207,0.4);
+}
+
+
+.navbar .nav > li > a{
+color: #aad6ec;
+}
+.navbar .nav > li > a:hover{
+  color: white;
+}
+
+.nav-pills > li .active > a{
+  color: #fff;
+}
+.bg{
+  padding-bottom: 15px;
+  transition: 0.5s ease;
+  background-color: transparent;
+
+}
+.bg.scrolled{
+  background-color: rgba(15,16,86,0.9);
+}
+
+.one a{
+
+position: absolute;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  border-radius: 30px;
+  background-size: 400%;
+  z-index: 1;
+}
+.one a:hover{
+  animation: animate 8s linear infinite;
+}
+@keyframes animate{
+  0%
+  {
+    background-position: 0%;
+  }
+  100%
+  {
+    background-position: 400%;
+  }
+}
+.one a:before{
+  content:'';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5;
+}
+.one a:hover:before{
+
+    filter: blur(10px);
+opacity: 1;
+animation: animate 8s linear infinite;
+}
+
+.jumbotron{
+  padding-bottom:100px;
+  margin-bottom: 0px;
+}
+
+.card{
+  border-color: #fee8f0;
+  border-width: 8px;
+}
+.card h5, .card p{
+  color: #e16b95;
+}
+
+
+
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-line, .fa-weixin, .fa-weibo, .fa-youtube, .fa-pinterest{
+ color: white;
+}
+
+.fa-facebook:hover{
+  color: #7369dc;
+}
+.fa-instagram:hover{
+  color: #7369dc;
+}
+.fa-youtube:hover{
+color: #7369dc;
+}
+.fa-twitter:hover{
+  color: #7369dc;
+}
+.fa-pinterest:hover{
+color: #7369dc;
+}
+.fa-line:hover{
+  color: #7369dc;
+}
+.fa-weibo:hover{
+  color: #7369dc;
+}
+.fa-weixin:hover{
+    color: #7369dc;
+}
